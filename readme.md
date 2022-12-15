@@ -5,6 +5,21 @@ The project grew out of (and is an integral part of) the [Absolem keyboard](http
 
 For usage and config information, please refer to the [docs](https://docs.ergogen.xyz).
 
+## Additional Footprints
+
+The choc footprint has been updated with a new "variant" attribute. Instead of a binary hotswap/through-hole toggle, a `variant: both` option has been included to allow a dual hotswap and through-hole PCB
+
+The diode footprint has been updated with a "variant" attribute as well. Options include, `variant: through-hole`, `variant: dual-smd`, `variant: front`, or `variant: back`. Through-hole keeps the default diode footprint with through holes and dual smd pads. Dual-smd drops the through holes, but puts pads on both sides of the PCB. Front and back allow you to put surface mount pads on only one side of the board.
+
+The mounting hole footprints were sourced from [MvEerd's mounting hole](https://github.com/MvEerd/ergogen/pull/6) pull request. This footprint is designed for M2 screws.
+
+The 2 pin through-hole push button footprint was sourced from [Tarneaux's supersplit keyboard](https://github.com/tarneaux/supersplit/blob/ba3eadcae2446f496cd67b3c8ec7804a96f18b8e/ergogen/src/footprints/button.js). This footprint works with a standard two pin 3*6*4.3mm pushbutton.
+
+# Backplate Footprints
+
+This library also includes footprints used for the creation of some Horizon or ChocV style backplates. These "standwich" style cases have an innert second PCB on the bottom of the keyboard with holes that cover the components from the main PCB. This sort of design makes a keyboard PCB more rigid without adding a lot of extra height.
+
+New footprints include: A through-hole pushbutton backplate, a choc hotswap backplate, a smd diode backplate, a jst battery header backplate, an oled backplate, and a pro micro backplate. The choc footprint is only designed to work with choc v1 keys in hotswap sockets.
 
 ## Contributions
 
